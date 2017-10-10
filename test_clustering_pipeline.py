@@ -39,4 +39,9 @@ class TestClusteringPipeline(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    # unittest.main()
+    tweets_path = TEST_DATA_PATH + 'edtweet.txt'
+    new_embs_path = TEST_DATA_PATH + 'generated_test.npy'
+    results_path = TEST_DATA_PATH + 'results/'
+    assert run_pipeline(tweets_path, MODELS_PATH, new_embs_path, do_generate=True,
+                        show_results=True, output_path=results_path, distance_threshold=1.6)

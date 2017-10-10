@@ -105,6 +105,6 @@ def download_SNOW_tweets():
 
 
 if __name__ == '__main__':
-    test_download_tweets()
+    # test_download_tweets()
     # first download the SNOW ids from https://figshare.com/articles/SNOW_2014_Data_Challenge/1003755
     download_SNOW_tweets()
