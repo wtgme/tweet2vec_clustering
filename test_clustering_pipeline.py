@@ -42,6 +42,6 @@ if __name__ == '__main__':
     # unittest.main()
     tweets_path = TEST_DATA_PATH + 'edtweet.txt'
     new_embs_path = TEST_DATA_PATH + 'generated_test.npy'
-    results_path = TEST_DATA_PATH + 'results/'
+    results_path = 'results/'
     assert run_pipeline(tweets_path, MODELS_PATH, new_embs_path, do_generate=True, do_cluster=False,
                         show_results=True, output_path=results_path, distance_threshold=1.6)
